@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple Web Server</title>
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+		<script type="text/javascript" src="/assets/js/main.js"></script>
+		<script type="text/javascript" src="/assets/js/lib/underscore-min.js"></script>
+		<script type="text/javascript" src="/assets/js/lib/backbone-min.js"></script>
+	</head>
+
+	<body>
+		<h1>I'm like hey whassup hello</h1>
+		<p>My Name: {{ my_name }}</p>
+		<p>My Favorite Color: {{ my_favorite_color }}</p>
+		<p>My Picture:</p>
+		<a onclick="sayHello();"><img src="/assets/img/{{ my_picture }}" /></a>
+
+		<form action "/" method="post">
+			<p>What's your name, tho?
+				<input type="text" name="your_name" />
+				<input type="submit" value="submit" name="your_name_submit" />
+			</p>
+		</form>
+	</body>
+</html>
